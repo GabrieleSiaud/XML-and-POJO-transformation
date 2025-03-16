@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE student [
+    <!ELEMENT student (name, id, subjects)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT id (#PCDATA)>
+    <!ELEMENT subjects (subject+)>
+    <!ELEMENT subject (lesson, teacher)>
+    <!ELEMENT lesson (#PCDATA)>
+    <!ELEMENT teacher (#PCDATA)>
+	<!ATTLIST student xsi:noNamespaceSchemaLocation CDATA #IMPLIED> ]> 
+
+<student xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="student.xsd"> 
+		 
+	<name>Gabriele</name>
+	<id>100</id>
+	<subjects>
+		<subject>
+			<lesson>Matematika</lesson>
+			<teacher>Jonas Petrauskas</teacher>
+		</subject>
+		<subject>
+			<lesson>Fizika</lesson>
+			<teacher>Rūta Jankauskaitė</teacher>
+		</subject>
+		<subject>
+			<lesson>Chemija</lesson>
+			<teacher>Marius Kazlauskas</teacher>
+		</subject>
+		<subject>
+			<lesson>Biologija</lesson>
+			<teacher>Monika Žukauskaitė</teacher> 
+		</subject>
+		<subject>
+			<lesson>Informatika</lesson>
+			<teacher>Andrius Miknevičius</teacher>
+		</subject>
+		<subject>
+			<lesson>Istorija</lesson>
+			<teacher>Justina Markeviciūtė</teacher>
+		</subject>
+		<subject>
+			<lesson>Literatūra</lesson>
+			<teacher>Vaidotas Naujokaitis</teacher>
+		</subject>
+		<subject>
+			<lesson>Ekonomika</lesson>
+			<teacher>Irina Slapšytė</teacher>
+		</subject>
+		<subject>
+			<lesson>Psichologija</lesson>
+			<teacher>Raimonda Žukauskienė</teacher>
+		</subject>
+		<subject>
+			<lesson>Socialiniai mokslai</lesson>
+			<teacher>Edgaras Jankauskas</teacher>
+		</subject>
+	</subjects>
+</student>
